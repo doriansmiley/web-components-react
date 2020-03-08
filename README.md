@@ -1,4 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a demo of how to use vanilla web components in React using [lotus-components@2.0.0](https://www.npmjs.com/package/lotusjs-components/v/2.0.0).
+lotus-components 2.0 is uses a functional style. 
+
+## Gist
+`App.js` warps the lotus button using refs. This allows React to perform view mediation
+and act as a component mediator for vanilla web components.
+You can use this pattern even if you don't use lotus-components.
 
 ## Available Scripts
 
