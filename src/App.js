@@ -50,8 +50,8 @@ function App() {
         >
           Learn React
         </a>
+        <lotus-button ref={button}><label>Hello World</label></lotus-button>
       </header>
-      <lotus-button ref={button}>Hello World</lotus-button>
     </div>
   );
 }
