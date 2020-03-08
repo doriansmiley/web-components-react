@@ -26,13 +26,13 @@ function App() {
   };
   ComponentRegistry.register(tagDef);
   const button = useRef();
-
-  useEffect( () => {
-    if (button.component) {
-      button.component.addEventListener(AbstractComponent.Events.CLICK, () => {
-        console.log('ref callback called');
-      });
+  const responder = {
+    onEvent: (event) => {
+      console.log('ref callback called');
     }
+  }
+  useEffect( () => {
+    button.current.component.addEventListener(AbstractComponent.Events.CLICK, responder, 'onEvent');
   });
 
   return (
